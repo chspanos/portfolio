@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <title>Portfolio</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-      <section class="title-header row">
+      <header class="title-header row">
         <div class="logo-box col-xs-4 col-md-2">
           <!-- Logo image created with CSS and Unicode symbol -->
           <figure class="logo">
@@ -23,13 +23,9 @@
           <h1>Cheryl Spanos</h1>
           <h4>Software Engineer and Author</h4>
         </div>
-      </section>
-      <section class="row">
-        <div class="col-md-12">
-          <hr>
-        </div>
-      </section>
-      <section class="hero row">
+      </header>
+      <hr class="divider">
+      <main class="hero row">
         <div class="col-md-12">
           <picture>
             <source media="(min-width: 800px)" srcset="images/library-large_2x.jpg">
@@ -38,7 +34,7 @@
             <img src="images/library-small.jpg" alt="CS library" class="img-responsive">
           </picture>
         </div>
-      </section>
+      </main>
       <section class="projects">
         <div class="proj-header row">
           <div class="col-md-12">
@@ -46,7 +42,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="project col-sm-6 col-md-4">
+          <article class="project col-sm-6 col-md-4">
             <!-- TODO: Replace with project 1 image -->
             <picture>
               <source media="(min-width: 500px)" srcset="images/caterpillar-medium.jpg">
@@ -56,8 +52,8 @@
             <h3>Project 1</h3>
             <!-- TODO: Insert actual github link -->
             <p><a href="https://github.com/chspanos/">Link to Project 1</a></p>
-          </div>
-          <div class="project col-sm-6 col-md-4">
+          </article>
+          <article class="project col-sm-6 col-md-4">
             <!-- TODO: Replace with project 2 image -->
             <picture>
               <source media="(min-width: 500px)" srcset="images/sundial-medium.jpg">
@@ -67,8 +63,8 @@
             <h3>Project 2</h3>
             <!-- TODO: Insert actual github link -->
             <p><a href="https://github.com/chspanos/">Link to Project 2</a></p>
-          </div>
-          <div class="project col-sm-6 col-md-4">
+          </article>
+          <article class="project col-sm-6 col-md-4">
             <!-- TODO: Replace with project 3 image -->
             <picture>
               <source media="(min-width: 500px)" srcset="images/hyacinth-medium.jpg">
@@ -78,24 +74,24 @@
             <h3>Project 3</h3>
             <!-- TODO: Insert actual github link -->
             <p><a href="https://github.com/chspanos/">Link to Project 3</a></p>
-          </div>
+          </article>
         </div>
       </section>
     </div>
     <!-- Modal for Project 1 -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="Project1Label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Project 1</h4>
+                    <h4 class="modal-title" id="Project1Label">Project 1</h4>
                 </div>
                 <div class="modal-body">
                     <!-- TODO: Replace image and text with description of Project 1 -->
-                    <img class="img-responsive" src="images/caterpillar-medium.jpg">
-                    <p>This swallowtail caterpillar munched on my dill plant for weeks. Every day, I watched in fascination as it grew larger, hoping
-                    to witness its transformation into a beautiful butterfly. Alas, the Eric Carle ending I had hoped for never came to pass. Instead, things took a rather more
-                    Lemony Snicket turn. My caterpillar has disappeared, and I suspect fowl play. A happy ending for the California Towhee. Not so much for the caterpillar.
-                    </p>
+                    <img class="img-responsive" src="images/caterpillar-medium.jpg" alt="caterpillar">
+                    <p>This swallowtail caterpillar munched on my dill plant for weeks. I watched in fascination as it daily grew larger, 
+                      hoping to witness its transformation into a beautiful butterfly. Alas, the Eric Carle ending I had hoped for never came
+                      to pass. Instead, things took a rather more Lemony Snicket turn. My caterpillar has disappeared, and I suspect fowl
+                      play. A happy ending for a California Towhee. Sadly, not so much for the caterpillar.</p>
                     <p>Note: This image is a placeholder for my actual project.</p>
                 </div>
                 <div class="modal-footer">
@@ -105,15 +101,15 @@
         </div>
     </div>
     <!-- Modal for Project 2 -->
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="Project2Label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Project 2</h4>
+                    <h4 class="modal-title" id="Project2Label">Project 2</h4>
                 </div>
                 <div class="modal-body">
                     <!-- TODO: Replace image and text with description of Project 2 -->
-                    <img class="img-responsive" src="images/sundial-medium.jpg">
+                    <img class="img-responsive" src="images/sundial-medium.jpg" alt="sundial">
                     <p>Description of Project 2 goes here.</p>
                 </div>
                 <div class="modal-footer">
@@ -123,15 +119,15 @@
         </div>
     </div>
     <!-- Modal for Project 3 -->
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="Project3Label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Project 3</h4>
+                    <h4 class="modal-title" id="Project3Label">Project 3</h4>
                 </div>
                 <div class="modal-body">
                     <!-- TODO: Replace image and text with description of Project 2 -->
-                    <img class="img-responsive" src="images/hyacinth-medium.jpg">
+                    <img class="img-responsive" src="images/hyacinth-medium.jpg" alt="hyacinths">
                     <p>Description of Project 3 goes here.</p>
                 </div>
                 <div class="modal-footer">
