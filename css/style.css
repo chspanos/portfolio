@@ -47,3 +47,7 @@ h2 {
 h3 {
   text-transform: uppercase;
 }
+
+.modal-title {
+  text-transform: uppercase;
+}

@@ -7,6 +7,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -48,7 +50,7 @@
             <!-- TODO: Replace with project 1 image -->
             <picture>
               <source media="(min-width: 500px)" srcset="images/caterpillar-medium.jpg">
-              <img src="images/caterpillar-small.jpg" alt="caterpillar" class="img-responsive">
+              <img src="images/caterpillar-small.jpg" alt="caterpillar" class="img-responsive" data-toggle="modal" data-target="#project1">
             </picture>
             <!-- TODO: Replace with project 1 name -->
             <h3>Project 1</h3>
@@ -59,7 +61,7 @@
             <!-- TODO: Replace with project 2 image -->
             <picture>
               <source media="(min-width: 500px)" srcset="images/sundial-medium.jpg">
-              <img src="images/sundial-small.jpg" alt="sundial" class="img-responsive">
+              <img src="images/sundial-small.jpg" alt="sundial" class="img-responsive" data-toggle="modal" data-target="#project2">
             </picture>
             <!-- TODO: Replace with project 2 name -->
             <h3>Project 2</h3>
@@ -70,7 +72,7 @@
             <!-- TODO: Replace with project 3 image -->
             <picture>
               <source media="(min-width: 500px)" srcset="images/hyacinth-medium.jpg">
-              <img src="images/hyacinth-small.jpg" alt="hyacinths" class="img-responsive">
+              <img src="images/hyacinth-small.jpg" alt="hyacinths" class="img-responsive" data-toggle="modal" data-target="#project3">
             </picture>
             <!-- TODO: Replace with project 3 name -->
             <h3>Project 3</h3>
@@ -79,6 +81,64 @@
           </div>
         </div>
       </section>
+    </div>
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Project 1</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- TODO: Replace image and text with description of Project 1 -->
+                    <img class="img-responsive" src="images/caterpillar-medium.jpg">
+                    <p>This swallowtail caterpillar munched on my dill plant for weeks. Every day, I watched in fascination as it grew larger, hoping
+                    to witness its transformation into a beautiful butterfly. Alas, the Eric Carle ending I had hoped for never came to pass. Instead, things took a rather more
+                    Lemony Snicket turn. My caterpillar has disappeared, and I suspect fowl play. A happy ending for the California Towhee. Not so much for the caterpillar.
+                    </p>
+                    <p>Note: This image is a placeholder for my actual project.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Project 2</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- TODO: Replace image and text with description of Project 2 -->
+                    <img class="img-responsive" src="images/sundial-medium.jpg">
+                    <p>Description of Project 2 goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Project 3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Project 3</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- TODO: Replace image and text with description of Project 2 -->
+                    <img class="img-responsive" src="images/hyacinth-medium.jpg">
+                    <p>Description of Project 3 goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
   </body>
 </html>
