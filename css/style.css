@@ -6,7 +6,7 @@ body {
 
 .logo {
   color: #02b3e4;
-  font-size: 90px;
+  font-size: 80px;
 }
 
 .title {
@@ -15,8 +15,18 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 100;
+}
+@media screen and (max-width: 625px) and (min-width: 511px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 510px) {
+  h1 {
+    font-size: 36px;
+  }
 }
 
 hr {
