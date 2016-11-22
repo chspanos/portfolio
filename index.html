@@ -65,6 +65,14 @@
             <h3>Web Optimization</h3>
             <p><a href="https://github.com/chspanos/mobile-portfolio">Link to Web Optimization Project</a></p>
           </article>
+          <article class="project col-sm-6 col-md-4">
+            <picture>
+              <source media="(min-width: 500px)" srcset="images/neighborhood-750.jpg">
+              <img src="images/neighborhood-500.jpg" alt="neighborhood map" class="img-responsive" data-toggle="modal" data-target="#project4">
+            </picture>
+            <h3>Neighborhood Map</h3>
+            <p><a href="https://github.com/chspanos/neighborhood-map">Link to Neighborhood Map</a></p>
+          </article>
         </div>
       </section>
     </div>
@@ -125,6 +133,28 @@
                       <strong>60 fps</strong> when scrolling. I also I reduced the time to resize the pizzas to less than <strong>5 ms</strong> when using the pizza
                       slider. For further details on the modifications made to achieve these results, see my
                       <a href="https://github.com/chspanos/mobile-portfolio">github project page</a>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Project 4 -->
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="Project4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="Project4Label">Neighborhood Map</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/neighborhood-750.jpg" alt="Neighborhood map image">
+                    <p class="project-text">In this project, I created a neighborhood map using <strong>Google Maps</strong> and other APIs. This application
+                      employs a MVVM (Model-View-ViewModel) framework implemented with <a href="http:knockoutjs.com">Knockout</a>. Knockout uses <em>observables</em>
+                      to monitor changes to the model and automatically updates the places menu with this information. Points of interest are
+                      highlighted with markers on the map. An information window is displayed containing additional details about each selected location.
+                      In addition to Google Maps, <strong>Wikipedia APIs</strong> and <strong>Foursquare APIs</strong> are also employed to generate place details.
+                      All APIs are called using jQuery AJAX methods.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
