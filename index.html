@@ -73,6 +73,14 @@
             <h3>Neighborhood Map</h3>
             <p><a href="https://github.com/chspanos/neighborhood-map">Link to Neighborhood Map</a></p>
           </article>
+          <article class="project col-sm-6 col-md-4">
+            <picture>
+              <source media="(min-width: 500px)" srcset="images/feedreader-750.jpg">
+              <img src="images/feedreader-500.jpg" alt="Feed reader testing" class="img-responsive" data-toggle="modal" data-target="#project5">
+            </picture>
+            <h3>Feed Reader Testing</h3>
+            <p><a href="https://github.com/chspanos/feedreader">Link to Feed Reader Testing</a></p>
+          </article>
         </div>
       </section>
     </div>
@@ -155,6 +163,28 @@
                       highlighted with markers on the map. An information window is displayed containing additional details about each selected location.
                       In addition to Google Maps, <strong>Wikipedia APIs</strong> and <strong>Foursquare APIs</strong> are also employed to generate place details.
                       All APIs are called using jQuery AJAX methods.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Project 5 -->
+    <div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="Project5Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="Project5Label">Feed Reader Testing</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/feedreader-750.jpg" alt="Feed Reader test image">
+                    <p class="project-text">In this project, I was given a web-based application that reads RSS feeds. The application included
+                      <a href="http://jasmine.github.io/">Jasmine</a> and an incomplete test suite. I used Jasmine to write the remaining
+                      specifications to test the application. These check the underlying logic as well as event handling and DOM manipulation.
+                      All tests are located in <em>jasmine/spec/feedreader.js</em>. The Jasmine results are displayed below the application, listing
+                      the tests performed and indicating which ones met the stated specifications. When a test fails, Jasmine produces an error
+                      message and trace for the failure.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
